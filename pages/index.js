@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Profile from './profile';
 
 export default function Home() {
   return (
@@ -10,6 +11,8 @@ export default function Home() {
       </Head>
 
       <main>
+        <Profile />
+
         <h1 className="title">
           Read{' '}
           <Link href="/posts/first-post">
